@@ -1,5 +1,3 @@
-import { Json } from '@blackglory/types'
-
-export function toJSON(res: Response): Promise<Json> {
+export function toJSON<T>(res: Response): Promise<T> {
   return res.json()
 }

@@ -60,7 +60,6 @@
   },
   "dependencies": {
     "@blackglory/http-status": "^0.1.1",
-    "@blackglory/types": "^0.1.8",
     "iterable-operator": "^0.12.2"
   }
 }
