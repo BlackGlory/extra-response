@@ -1,6 +1,6 @@
 # extra-response
 
-Utility for [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response).
+Utilities for [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response).
 
 ## Install
 

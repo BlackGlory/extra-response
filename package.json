@@ -1,7 +1,7 @@
 {
   "name": "extra-response",
   "version": "0.1.1",
-  "description": "Utility for fetch.",
+  "description": "Utilities for Response",
   "keywords": [],
   "files": [
     "lib",
