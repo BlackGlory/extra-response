@@ -15,7 +15,7 @@ yarn add extra-response
 ### ok
 
 ```ts
-ok(res: Response): Response
+ok(res: Response): Promise<Response>
 ```
 
 If `res.ok` is `false`, it will throw `HTTPError`.
