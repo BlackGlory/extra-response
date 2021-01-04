@@ -59,7 +59,7 @@
     "webpack": "^4.44.2"
   },
   "dependencies": {
-    "@blackglory/http-status": "^0.1.4",
+    "@blackglory/http-status": "^0.1.5",
     "iterable-operator": "^0.12.6"
   }
 }
