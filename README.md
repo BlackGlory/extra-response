@@ -47,3 +47,9 @@ toNDJSON(res: Response): AsyncIterable<Json>
 ```
 
 Only available on *browser*, because `node-fetch` is not provide the WHATWG `ReadableStream` as body.
+
+### toCSV
+
+```ts
+toCSV(res: Response): Promise<Array<{ [name: string]: string }>>
+```
