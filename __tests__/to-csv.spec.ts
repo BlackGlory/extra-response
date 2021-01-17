@@ -4,7 +4,8 @@ describe('toCSV(res: Response): Promise<Array<{ [name: string]: string }>>', () 
   it('return AsyncIterable<string>', async () => {
     const text = 'key,value' + '\n'
                + 'foo,bar' + '\n'
-               + 'hello,world'
+               + 'hello,world' + '\n'
+               + ' ' // should be ignored
     const res = new Response(text)
 
     const result = toCSV(res)
