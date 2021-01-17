@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.5](https://github.com/BlackGlory/extra-response/compare/v0.2.4...v0.2.5) (2021-01-17)
+
+
+### Features
+
+* skip empty lines ([09f88b4](https://github.com/BlackGlory/extra-response/commit/09f88b45ae7d04ae2beb60108a91b85dfcdd3cf9))
+
 ### [0.2.4](https://github.com/BlackGlory/extra-response/compare/v0.2.3...v0.2.4) (2021-01-15)
 
 
