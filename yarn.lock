@@ -30,24 +30,24 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@blackglory/errors@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@blackglory/errors/-/errors-0.1.3.tgz#5ec4c7c2f67b4f066031c1d2601759177a4e411c"
-  integrity sha512-7h63kbR5YIw9izt5efQFVoiYtXTxmr1o+FkWcdRLHYfI0aVzz5dgg5diWV+NcnUR7EOrtq7J/PXZ5oppaq5NYQ==
+"@blackglory/errors@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@blackglory/errors/-/errors-0.1.4.tgz#9420c2f972a0609be3ae53f023ca3f8aebbb28f9"
+  integrity sha512-Ix/r14W9wxX051MDPaOvag4jbnQ6wYDNc4OfQjPXU7ZD0FTQ/Nnr7qDHkg/Uv6R5FUP3MrWs3omXAN7g0YtBxw==
 
-"@blackglory/http-status@^0.1.6":
-  version "0.1.6"
-  resolved "https://registry.yarnpkg.com/@blackglory/http-status/-/http-status-0.1.6.tgz#b791c0d1e11bee2e556c0a000e86ec4daa3e462f"
-  integrity sha512-63fDDaYXFluTAf0qwrD3IDAX4GtUYoRn6eh5Ve0+ubxnWZEAMlEn25qpwsglwthAnqrmULmLNUEHcGTcmjLtNQ==
+"@blackglory/http-status@^0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@blackglory/http-status/-/http-status-0.1.7.tgz#5fd3df2bdc57316660580273ed18ba2c6c830972"
+  integrity sha512-I3ytl5K8sipk9RQJK7+mndpCWz80m+nbSCyJaIkv/oOj2SA0NTHt3n0n3wGdGiD9T0nxcNN9GOOtDo+aiOC9Lw==
   dependencies:
-    "@blackglory/errors" "^0.1.3"
+    "@blackglory/errors" "^0.1.4"
 
-"@blackglory/types@^0.2.3":
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/@blackglory/types/-/types-0.2.3.tgz#c574139d56098ee802e3d9f03d5b46f9d4ea0d7c"
-  integrity sha512-9b5EwgX/zjdBDrAxzOotz8+xrhocFwl2ZBWEHev86Y1NC/ZQWdCfyckNG/7evWEmkFI4WcnuXc1nA14c8/LoBg==
+"@blackglory/types@^0.2.9":
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/@blackglory/types/-/types-0.2.9.tgz#8f87fdc5242dd493cff7ef2d18d325debaa2e0ba"
+  integrity sha512-4Z9wpm98rV2uNw1MF10DqqtHiGVSGikwXz75Mb5Z3uF63w7pX4oRpuq+wdifyD50QOfZvb9ZP3pPdu1GlWy+hg==
   dependencies:
-    "@types/node" "^14.14.19"
+    "@types/node" "^14.14.22"
     ajv "^7.0.3"
 
 "@commitlint/cli@^11.0.0":
@@ -341,10 +341,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.10.tgz#5958a82e41863cfc71f2307b3748e3491ba03785"
   integrity sha512-J32dgx2hw8vXrSbu4ZlVhn1Nm3GbeCFNw2FWL8S5QKucHGY0cyNwjdQdO+KMBZ4wpmC7KhLCiNsdk1RFRIYUQQ==
 
-"@types/node@^14.14.19":
-  version "14.14.19"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.19.tgz#5135176a8330b88ece4e9ab1fdcfc0a545b4bab4"
-  integrity sha512-4nhBPStMK04rruRVtVc6cDqhu7S9GZai0fpXgPXrFpcPX6Xul8xnrjSdGB4KPBVYG/R5+fXWdCM8qBoiULWGPQ==
+"@types/node@^14.14.22":
+  version "14.14.22"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.22.tgz#0d29f382472c4ccf3bd96ff0ce47daf5b7b84b18"
+  integrity sha512-g+f/qj/cNcqKkc3tFqlXOYjrmZA+jNBiDzbP3kH+B+otKFqAdPgVTGP1IeKRdMml/aE69as5S4FqtxAbl+LaMw==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -3199,12 +3199,12 @@ isobject@^3.0.0, isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
-iterable-operator@^0.12.7:
-  version "0.12.7"
-  resolved "https://registry.yarnpkg.com/iterable-operator/-/iterable-operator-0.12.7.tgz#54057c05b33ffc7c21e4ebd7227aef123eec12f6"
-  integrity sha512-7Ku+aHluJgZdpbJHgfxkFMtdQPvt2aLcsQr+WiwDCx25X/EwT4fYze4R9XYucX6TihlQElesVmQLYzpKpY9fOg==
+iterable-operator@^0.12.9:
+  version "0.12.9"
+  resolved "https://registry.yarnpkg.com/iterable-operator/-/iterable-operator-0.12.9.tgz#2e0ca7fb38a22e4185e9f99d22887fd5d44f59d9"
+  integrity sha512-L8p3zUuW1x+oUknp9bRtQ+xXuPuaOMWujc0m+i/VMxBunvLjeqZ3Qb7XkcqUy95c9JKnom1foGZXv1lCPdbjiA==
   dependencies:
-    "@blackglory/types" "^0.2.3"
+    "@blackglory/types" "^0.2.9"
 
 jasmine-core@^3.6.0:
   version "3.6.0"
@@ -4699,10 +4699,10 @@ ret@~0.1.10:
   resolved "https://registry.yarnpkg.com/ret/-/ret-0.1.15.tgz#b8a4825d5bdb1fc3f6f53c2bc33f81388681c7bc"
   integrity sha512-TTlYpa+OL+vMMNG24xSlQGEJ3B/RzEfUlLct7b5G/ytav+wPrplCpVMFuwzXbkecJrb6IYo1iFb0S9v37754mg==
 
-return-style@^0.11.3:
-  version "0.11.3"
-  resolved "https://registry.yarnpkg.com/return-style/-/return-style-0.11.3.tgz#4efe2de778f476d95c2e744b3429053deb0451be"
-  integrity sha512-PJi1HtchIz2hniB7ajUgjbtU9M1uFqikXXznP5Q/7UcsUp8PSJTQ+0gVXmzypCb+VUdTf85Ajb3M+mYQ6SWvpA==
+return-style@^0.11.4:
+  version "0.11.4"
+  resolved "https://registry.yarnpkg.com/return-style/-/return-style-0.11.4.tgz#ec01cab21a2cf41aa0e2db75def0125ba92e4495"
+  integrity sha512-bxKSCFNhLByCfWZcyng5zN4V5Dgik7PhL5PMAobA/B9ifHMnDE/BkBTkvFW4XrFkjY8xL4mEn5nHqN16CEiImA==
 
 reusify@^1.0.4:
   version "1.0.4"
