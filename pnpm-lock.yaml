@@ -1,8 +1,8 @@
 dependencies:
-  '@blackglory/http-status': 0.1.7
   iterable-operator: 0.13.0
   papaparse: 5.3.0
 devDependencies:
+  '@blackglory/http-status': 0.1.8
   '@commitlint/cli': 11.0.0
   '@commitlint/config-conventional': 11.0.0
   '@rollup/plugin-commonjs': 17.1.0_rollup@2.38.4
@@ -59,17 +59,17 @@ packages:
     resolution:
       integrity: sha512-8+3UMPBrjFa/6TtKi/7sehPKqfAm4g6K+YQjyyFOLUTxzOngcRZTlAVY8sc2CORJYqdHQY8gRPHmn+qo15rCBw==
   /@blackglory/errors/0.1.5:
-    dev: false
+    dev: true
     engines:
       node: '>=12'
     resolution:
       integrity: sha512-n0pCQ8JKx5Tw9QuNBWsokvOwX0oJn/qnEYWspSNaPzo/QrmZAiHhpIiPWHEhtmt8gLVsHw3dizw7iQbiOwR/ZA==
-  /@blackglory/http-status/0.1.7:
+  /@blackglory/http-status/0.1.8:
     dependencies:
       '@blackglory/errors': 0.1.5
-    dev: false
+    dev: true
     resolution:
-      integrity: sha512-I3ytl5K8sipk9RQJK7+mndpCWz80m+nbSCyJaIkv/oOj2SA0NTHt3n0n3wGdGiD9T0nxcNN9GOOtDo+aiOC9Lw==
+      integrity: sha512-FkE1wbujB/J5qzcZrRPwpGjxkAp5zHBTms9Aw6Z09HIMtGfzhJJlKcxMViZeRyOSzG4Q+fvEpzNs10rKonBIAw==
   /@blackglory/types/0.2.11:
     dependencies:
       '@types/node': 14.14.22
@@ -5806,7 +5806,7 @@ packages:
     resolution:
       integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 specifiers:
-  '@blackglory/http-status': ^0.1.7
+  '@blackglory/http-status': ^0.1.8
   '@commitlint/cli': ^11.0.0
   '@commitlint/config-conventional': ^11.0.0
   '@rollup/plugin-commonjs': ^17.1.0
