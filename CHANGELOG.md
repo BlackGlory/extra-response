@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.11](https://github.com/BlackGlory/extra-response/compare/v0.2.10...v0.2.11) (2021-02-03)
+
 ### [0.2.10](https://github.com/BlackGlory/extra-response/compare/v0.2.9...v0.2.10) (2021-02-02)
 
 ### [0.2.9](https://github.com/BlackGlory/extra-response/compare/v0.2.8...v0.2.9) (2021-01-27)
