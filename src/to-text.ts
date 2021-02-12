@@ -1,5 +1,3 @@
-import { TextDecoder } from '@utils/text-decoder'
-
 export async function toText(res: Response, charset?: string): Promise<string> {
   if (charset) {
     const buffer = await res.arrayBuffer()

@@ -9,13 +9,12 @@
   ],
   "main": "lib/es2018/index.js",
   "types": "lib/es2018/index.d.ts",
-  "browser": {
-    "./lib/es2015/utils/text-decoder.js": "./lib/es2015/utils/text-decoder.browser.js",
-    "./lib/es2018/utils/text-decoder.js": "./lib/es2018/utils/text-decoder.browser.js"
-  },
   "repository": "git@github.com:BlackGlory/extra-response.git",
   "author": "BlackGlory <woshenmedoubuzhidao@blackglory.me>",
   "license": "MIT",
+  "engines": {
+    "node": ">=12"
+  },
   "scripts": {
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --quiet src __tests__",
     "test": "karma start karma.config.js --single-run",
