@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/BlackGlory/extra-response/compare/v0.2.15...v0.3.0) (2021-02-12)
+
+
+### ⚠ BREAKING CHANGES
+
+* engine >= 12 required
+
+* use global TextDecoder ([9190269](https://github.com/BlackGlory/extra-response/commit/919026949c62adc7ed38368cfd73df86987ac6bb))
+
 ### [0.2.15](https://github.com/BlackGlory/extra-response/compare/v0.2.14...v0.2.15) (2021-02-12)
 
 
