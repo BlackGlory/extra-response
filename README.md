@@ -29,7 +29,7 @@ toJSON(res: Response): Promise<Json>
 ### toText
 
 ```ts
-toText(res: Response): Promise<string>
+toText(res: Response, charset?: string): Promise<string>
 ```
 
 ### toLines

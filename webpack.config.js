@@ -5,7 +5,7 @@ module.exports = {
 , mode: 'development'
 , resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json']
-  , plugins: [new TsconfigPathsPlugin()]
+  , plugins: [new TsconfigPathsPlugin({ configFile: 'tsconfig.test.json' })]
   }
 , module: {
     rules: [
