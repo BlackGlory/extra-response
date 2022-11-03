@@ -1,9 +1,11 @@
 {
   "name": "extra-response",
-  "version": "0.3.11",
+  "version": "0.3.12",
   "description": "Utilities for Response",
   "keywords": [],
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "main": "lib/es2018/index.js",
   "types": "lib/es2018/index.d.ts",
   "sideEffects": false,
