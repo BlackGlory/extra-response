@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/BlackGlory/extra-response/compare/v0.3.12...v0.4.0) (2022-11-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* Removed `toCSV` function because it is impractical
+
+* remove `toCSV` ([c9ece80](https://github.com/BlackGlory/extra-response/commit/c9ece80c67f0ef12d00ce7c958ead70419989199))
+
 ### [0.3.12](https://github.com/BlackGlory/extra-response/compare/v0.3.11...v0.3.12) (2022-11-03)
 
 ### [0.3.11](https://github.com/BlackGlory/extra-response/compare/v0.3.10...v0.3.11) (2022-04-14)
