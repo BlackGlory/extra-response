@@ -60,7 +60,7 @@
     "webpack": "^5.75.0"
   },
   "dependencies": {
-    "iterable-operator": "^2.3.0"
+    "iterable-operator": "^2.3.0 || ^3.0.0"
   },
   "peerDependencies": {
     "@blackglory/http-status": "^1.0.0"
