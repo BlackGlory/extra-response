@@ -1,4 +1,4 @@
-import { toText } from '@src/to-text'
+import { toText } from '@src/to-text.js'
 
 describe('toText(res: Response): Promise<string>', () => {
   it('return Promise<string>', async () => {

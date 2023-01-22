@@ -1,4 +1,4 @@
-import { toLines } from '@src/to-lines'
+import { toLines } from '@src/to-lines.js'
 import { toArrayAsync } from 'iterable-operator'
 
 describe('toLines(res: Response): AsyncIterable<string>', () => {

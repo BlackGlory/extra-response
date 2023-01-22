@@ -1,4 +1,5 @@
 import { fromCode } from '@blackglory/http-status'
+
 export { HTTPError } from '@blackglory/http-status'
 
 /**

@@ -1,4 +1,4 @@
-import { toJSON } from '@src/to-json'
+import { toJSON } from '@src/to-json.js'
 
 describe('toJSON(res: Response): Promise<Json>', () => {
   it('return Promise<Json>', async () => {

@@ -1,4 +1,4 @@
-import { ok, HTTPError } from '@src/ok'
+import { ok, HTTPError } from '@src/ok.js'
 import { getErrorPromise } from 'return-style'
 
 describe('ok(res: Response): Promise<Response>', () => {

@@ -1,4 +1,4 @@
-import { toNDJSON } from '@src/to-ndjson'
+import { toNDJSON } from '@src/to-ndjson.js'
 import { toArrayAsync } from 'iterable-operator'
 
 describe('toNDJSON(res: Response): AsyncIterable<Json>', () => {
