@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest'
 import { toLines } from '@src/to-lines.js'
 import { toArrayAsync } from 'iterable-operator'
 

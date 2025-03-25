@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest'
 import { toText } from '@src/to-text.js'
 
 describe('toText(res: Response): Promise<string>', () => {

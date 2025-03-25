@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest'
 import { toJSON } from '@src/to-json.js'
 
 describe('toJSON(res: Response): Promise<Json>', () => {
