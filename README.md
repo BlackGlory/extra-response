@@ -1,5 +1,7 @@
 # extra-response
-Utilities for [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response).
+Utilities for [Response].
+
+[Response]: https://developer.mozilla.org/en-US/docs/Web/API/Response
 
 ## Install
 ```sh
@@ -31,11 +33,11 @@ toText(res: Response, charset?: string): Promise<string>
 toLines(res: Response): AsyncIterable<string>
 ```
 
-Only available on *browser*, because `node-fetch` is not provide the WHATWG `ReadableStream` as body.
+Not available for `node-fetch`, because it is not provide the WHATWG `ReadableStream` as body.
 
 ### toNDJSON
 ```ts
 toNDJSON(res: Response): AsyncIterable<Json>
 ```
 
-Only available on *browser*, because `node-fetch` is not provide the WHATWG `ReadableStream` as body.
+Not available for `node-fetch`, because it is not provide the WHATWG `ReadableStream` as body.
