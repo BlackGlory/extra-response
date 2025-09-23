@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/BlackGlory/extra-response/compare/v0.5.2...v0.6.0) (2025-09-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* Node.js v16 => Node.js v22
+
+### Features
+
+* use assertions ([fca0705](https://github.com/BlackGlory/extra-response/commit/fca07053d5018cde809d4155749a7c0874e1353c))
+
+
+### Bug Fixes
+
+* **to-lines, to-ndjson:** make them handle buffers correctly ([afc8522](https://github.com/BlackGlory/extra-response/commit/afc85228d747cb9ddea3285554ad9d05908fd0d5))
+
+
+* upgrade dependencies ([04991e8](https://github.com/BlackGlory/extra-response/commit/04991e894a0ea26c37a52602890f29b27358e584))
+
 ### [0.5.2](https://github.com/BlackGlory/extra-response/compare/v0.5.1...v0.5.2) (2023-06-10)
 
 
