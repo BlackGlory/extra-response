@@ -1,13 +1,14 @@
 import { test, expect } from 'vitest'
 import { toJSON } from '@src/to-json.js'
+import { isPromise } from '@blackglory/prelude'
 
 test('toJSON', async () => {
   const json = { test: 'test' }
   const res = new Response(JSON.stringify(json))
 
-  const result = toJSON(res)
-  const proResult = await result
+  const promise = toJSON(res)
+  const result = await promise
 
-  expect(result).toBeInstanceOf(Promise)
-  expect(proResult).toEqual(json)
+  expect(isPromise(promise)).toBe(true)
+  expect(result).toStrictEqual(json)
 })

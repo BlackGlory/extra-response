@@ -1,14 +1,19 @@
 import { test, expect } from 'vitest'
 import { toLines } from '@src/to-lines.js'
 import { toArrayAsync } from 'iterable-operator'
+import { isAsyncIterable } from '@blackglory/prelude'
 
 test('toLines', async () => {
-  const text = '1\n2\n3'
-  const res = new Response(text)
+  const lines = [
+    '1'
+  , '2'
+  , '3'
+  ]
+  const res = new Response(lines.join('\n'))
 
-  const result = toLines(res)
-  const proResult = await toArrayAsync(result)
+  const iter = toLines(res)
+  const result = await toArrayAsync(iter)
 
-  expect(result[Symbol.asyncIterator]).toBeTruthy()
-  expect(proResult).toEqual(['1', '2', '3'])
+  expect(isAsyncIterable(iter)).toBe(true)
+  expect(result).toStrictEqual(lines)
 })

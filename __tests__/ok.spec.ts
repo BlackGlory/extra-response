@@ -1,16 +1,17 @@
 import { describe, test, expect } from 'vitest'
 import { ok, HTTPError } from '@src/ok.js'
 import { getErrorPromise } from 'return-style'
+import { isPromise } from '@blackglory/prelude'
 
 describe('ok', () => {
   test('2xx', async () => {
     const res = new Response(null, { status: 200 })
 
-    const result = ok(res)
-    const proResult = await result
+    const promise = ok(res)
+    const result = await promise
 
-    expect(result).toBeInstanceOf(Promise)
-    expect(proResult).toBe(res)
+    expect(isPromise(promise)).toBe(true)
+    expect(result).toBe(res)
   })
 
   test('not 2xx', async () => {

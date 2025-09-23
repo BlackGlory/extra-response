@@ -1,17 +1,22 @@
 import { test, expect } from 'vitest'
 import { toNDJSON } from '@src/to-ndjson.js'
 import { toArrayAsync } from 'iterable-operator'
+import { isAsyncIterable } from '@blackglory/prelude'
 
 test('toNDJSON', async () => {
-  const jsonArr = [
+  const lines = [
     { data: 'data1' }
   , { data: 'data2' }
   ]
-  const res = new Response(jsonArr.map(x => JSON.stringify(x)).join('\n'))
+  const res = new Response(
+    lines
+      .map(x => JSON.stringify(x))
+      .join('\n')
+  )
 
-  const result = toNDJSON(res)
-  const proResult = await toArrayAsync(result)
+  const iter = toNDJSON(res)
+  const result = await toArrayAsync(iter)
 
-  expect(result[Symbol.asyncIterator]).toBeTruthy()
-  expect(proResult).toEqual(jsonArr)
+  expect(isAsyncIterable(iter)).toBe(true)
+  expect(result).toStrictEqual(lines)
 })
