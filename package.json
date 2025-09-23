@@ -52,6 +52,7 @@
     "vitest": "^3.2.4"
   },
   "dependencies": {
+    "@blackglory/prelude": "^0.4.0",
     "iterable-operator": "^5.1.0"
   },
   "peerDependencies": {

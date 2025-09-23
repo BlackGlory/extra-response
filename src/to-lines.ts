@@ -1,5 +1,9 @@
+import { assert } from '@blackglory/prelude'
+
 export async function* toLines(res: Response): AsyncIterable<string> {
-  const reader = res.body!
+  assert(res.body, 'The response has no body')
+
+  const reader = res.body
     .pipeThrough(new TextDecoderStream())
     .getReader()
 
