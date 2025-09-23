@@ -1,8 +1,8 @@
-import { describe, it, expect } from 'vitest'
+import { describe, test, expect } from 'vitest'
 import { toText } from '@src/to-text.js'
 
-describe('toText(res: Response): Promise<string>', () => {
-  it('return Promise<string>', async () => {
+describe('toText', () => {
+  test('without charset', async () => {
     const text = 'test'
     const res = new Response(text)
 
@@ -12,10 +12,8 @@ describe('toText(res: Response): Promise<string>', () => {
     expect(result).toBeInstanceOf(Promise)
     expect(proResult).toBe(text)
   })
-})
 
-describe('toText(res: Response, charset: string): Promise<string>', () => {
-  it('return Promise<string>', async () => {
+  test('with charset', async () => {
     const text = 'test'
     const res = new Response(text)
 
