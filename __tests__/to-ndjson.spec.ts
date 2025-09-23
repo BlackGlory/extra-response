@@ -1,7 +1,8 @@
 import { test, expect } from 'vitest'
 import { toNDJSON } from '@src/to-ndjson.js'
 import { toArrayAsync } from 'iterable-operator'
-import { isAsyncIterable } from '@blackglory/prelude'
+import { go, isAsyncIterable } from '@blackglory/prelude'
+import { toReadableStream } from 'extra-stream'
 
 test('toNDJSON', async () => {
   const lines = [
@@ -9,9 +10,13 @@ test('toNDJSON', async () => {
   , { data: 'data2' }
   ]
   const res = new Response(
-    lines
-      .map(x => JSON.stringify(x))
-      .join('\n')
+    toReadableStream(go(function* () {
+      for (const line of lines) {
+        yield JSON.stringify(line)
+        yield '\n'
+      }
+    }))
+      .pipeThrough(new TextEncoderStream())
   )
 
   const iter = toNDJSON(res)

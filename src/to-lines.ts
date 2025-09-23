@@ -7,17 +7,19 @@ export async function* toLines(res: Response): AsyncIterable<string> {
     .pipeThrough(new TextDecoderStream())
     .getReader()
 
-  let buffer = ''
+  let remains = ''
   while (true) {
     const { value, done } = await reader.read()
     if (done) break
-    let remains = value!
-    while (remains.includes('\n')) {
-      const newlinePos = remains.indexOf('\n')
-      yield remains.slice(0, newlinePos)
-      remains = remains.slice(newlinePos + 1)
+
+    remains += value
+
+    let newlineIndex: number
+    while (newlineIndex = remains.indexOf('\n'), newlineIndex >= 0) {
+      yield remains.slice(0, newlineIndex)
+
+      remains = remains.slice(newlineIndex + 1)
     }
-    buffer += remains
   }
-  if (buffer) yield buffer
+  if (remains) yield remains
 }

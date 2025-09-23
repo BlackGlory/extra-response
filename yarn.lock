@@ -1941,6 +1941,14 @@ extra-rand@^0.1.1:
   resolved "https://registry.yarnpkg.com/extra-rand/-/extra-rand-0.1.5.tgz#5a3bbba6bbc8ed4e2c0c9dc66a4a2b6a309040df"
   integrity sha512-xOaelLjCoQrCjnpNHCwoKHew4Jiu2ZeFGVEce0MgFCvPoZGnu9KO/zv+OObnvV4Np8k05/Q0x1GaEqHXuveeYg==
 
+extra-stream@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/extra-stream/-/extra-stream-0.3.1.tgz#d59fec3788602d78f2f097477a347deed778e11c"
+  integrity sha512-2eV7kLrtBzGZXWt+KZf2QQ4ARSOYfn01pkhEfdYaFo19x8XC1b/4/UMtpeWlnXPI1IB50cb9c4zzZSQ0ogRbzw==
+  dependencies:
+    "@blackglory/go" "^1.1.2"
+    extra-utils "^5.2.0"
+
 extra-timers@^0.2.5, extra-timers@^0.2.6:
   version "0.2.6"
   resolved "https://registry.yarnpkg.com/extra-timers/-/extra-timers-0.2.6.tgz#a82d0f90c9090963eed42da63a547d381be2e77f"
