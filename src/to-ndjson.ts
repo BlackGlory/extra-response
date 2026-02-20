@@ -1,9 +1,9 @@
 import { mapAsync } from 'iterable-operator'
 import { toLines } from './to-lines.js'
 
-export function toNDJSON<T>(res: Response): AsyncIterable<T> {
+export function toNDJSON<T>(res: Response, newline: string = '\n'): AsyncIterable<T> {
   return mapAsync(
-    toLines(res)
+    toLines(res, newline)
   , text => JSON.parse(text)
   )
 }

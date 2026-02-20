@@ -1,6 +1,6 @@
 import { assert } from '@blackglory/prelude'
 
-export async function* toLines(res: Response): AsyncIterable<string> {
+export async function* toLines(res: Response, newline = '\n'): AsyncIterable<string> {
   assert(res.body, 'The response has no body')
 
   const reader = res.body
@@ -15,10 +15,13 @@ export async function* toLines(res: Response): AsyncIterable<string> {
     remains += value
 
     let newlineIndex: number
-    while (newlineIndex = remains.indexOf('\n'), newlineIndex >= 0) {
+    while (newlineIndex = remains.indexOf(newline), newlineIndex >= 0) {
       yield remains.slice(0, newlineIndex)
 
-      remains = remains.slice(newlineIndex + 1)
+      remains = remains.slice(
+        newlineIndex
+      + newline.length
+      )
     }
   }
   if (remains) yield remains

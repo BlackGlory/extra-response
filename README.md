@@ -30,14 +30,20 @@ toText(res: Response, charset?: string): Promise<string>
 
 ### toLines
 ```ts
-toLines(res: Response): AsyncIterable<string>
+toLines(
+  res: Response
+, newline: string = '\n'
+): AsyncIterable<string>
 ```
 
 Not available for `node-fetch`, because it is not provide the WHATWG `ReadableStream` as body.
 
 ### toNDJSON
 ```ts
-toNDJSON(res: Response): AsyncIterable<Json>
+toNDJSON(
+  res: Response
+, newline: string = '\n'
+): AsyncIterable<Json>
 ```
 
 Not available for `node-fetch`, because it is not provide the WHATWG `ReadableStream` as body.
