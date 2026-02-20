@@ -5,7 +5,10 @@ import { go, isAsyncIterable } from '@blackglory/prelude'
 import { toReadableStream } from 'extra-stream'
 
 describe('toLines', () => {
-  test('newline \\n', async () => {
+  test.each([
+    ['\n', '\\n']
+  , ['\r\n', '\\r\\n']
+  ])('newline $1', async newline => {
     const lines = [
       '1'
     , '2'
@@ -14,35 +17,13 @@ describe('toLines', () => {
       toReadableStream(go(function* () {
         for (const line of lines) {
           yield line
-          yield '\n'
+          yield newline
         }
       }))
         .pipeThrough(new TextEncoderStream())
     )
 
-    const iter = toLines(res)
-    const result = await toArrayAsync(iter)
-
-    expect(isAsyncIterable(iter)).toBe(true)
-    expect(result).toStrictEqual(lines)
-  })
-
-  test('newline \\r\\n', async () => {
-    const lines = [
-      '1'
-    , '2'
-    ]
-    const res = new Response(
-      toReadableStream(go(function* () {
-        for (const line of lines) {
-          yield line
-          yield '\r\n'
-        }
-      }))
-        .pipeThrough(new TextEncoderStream())
-    )
-
-    const iter = toLines(res, '\r\n')
+    const iter = toLines(res, newline)
     const result = await toArrayAsync(iter)
 
     expect(isAsyncIterable(iter)).toBe(true)

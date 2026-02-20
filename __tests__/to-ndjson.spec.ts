@@ -5,7 +5,10 @@ import { go, isAsyncIterable } from '@blackglory/prelude'
 import { toReadableStream } from 'extra-stream'
 
 describe('toNDJSON', () => {
-  test('newline \\n', async () => {
+  test.each([
+    ['\n', '\\n']
+  , ['\r\n', '\\r\\n']
+  ])('newline $1', async newline => {
     const lines = [
       { data: 'data1' }
     , { data: 'data2' }
@@ -14,35 +17,13 @@ describe('toNDJSON', () => {
       toReadableStream(go(function* () {
         for (const line of lines) {
           yield JSON.stringify(line)
-          yield '\n'
+          yield newline
         }
       }))
         .pipeThrough(new TextEncoderStream())
     )
 
-    const iter = toNDJSON(res, '\n')
-    const result = await toArrayAsync(iter)
-
-    expect(isAsyncIterable(iter)).toBe(true)
-    expect(result).toStrictEqual(lines)
-  })
-
-  test('newline \\r\\n', async () => {
-    const lines = [
-      { data: 'data1' }
-    , { data: 'data2' }
-    ]
-    const res = new Response(
-      toReadableStream(go(function* () {
-        for (const line of lines) {
-          yield JSON.stringify(line)
-          yield '\r\n'
-        }
-      }))
-        .pipeThrough(new TextEncoderStream())
-    )
-
-    const iter = toNDJSON(res, '\r\n')
+    const iter = toNDJSON(res, newline)
     const result = await toArrayAsync(iter)
 
     expect(isAsyncIterable(iter)).toBe(true)
